@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    
+    <title>Rock, Paper, Scissors</title>
 </head>
-<body>
+<body style='background-color: lightcyan;'>
+    <h1 style="text-align: center;">Rock, Paper, Scissors</h1>
+    <h2 style="text-align: center;">Open the console!</h2>
+    <p style="text-align: center;">Current Rules:</p>
+    
+    <ul>
+        <li>Each win is +1 to score</li>
+        <br/>
+        <li>Each loss is -1 to score, if and only if your current score is <u>greater than 0</u></li>
+        <br/>
+        <li>To exit during a game, just press the cancel button on the prompt</li>
+        <br/>
+        <li>Must enter valid choices for each pop-up box:</li>
+        <ul style='list-style-type: circle;'>
+            <li>Must enter a whole number greater than 0 for the amount of rounds you want to play</li>
+            <li>Must enter either: Rock, Paper, or Scissor when choosing your move</li>
+        </ul>
+        <br/>
+        <li>If the player enters an invalid choice, they will be forced to re-enter until it is valid</li>
+        <ul style='list-style-type: circle;'>
+            <li>Note that your choice of move is NOT case sensitive (just spell it correctly)</li>
+            <li>If you entered an invalid choice of move, you cannot exit the game until a valid choice is entered</li>
+        </ul>
+        <br/>        
+        <li>The computer's choice comes from a pseudo-random function (it is not truly random; no AI)</li>
+        <br/>
+    </ul>
 
+    <p style="text-align: center;">Click the button below to start the game!</p>
+    
+    <div style='display: flex; justify-content: center; align-items: center;'>
+        <button type='button' onClick='game()' style='color:white; background-color:green; border:none; width: 150px; height: 100%; font-size: 24px; cursor: pointer;'>Start Game</button>
+    </div>
 
+    <script type="text/javascript" src="js/script.js"></script> 
 </body>
 </html>
